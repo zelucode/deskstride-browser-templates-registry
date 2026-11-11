@@ -28,7 +28,7 @@
   "downloadUrl": "https://raw.githubusercontent.com/zelucode/deskstride-browser-templates-registry/main/templates/practice-login-from-csv/workflow.json",
   "readmeUrl": "https://raw.githubusercontent.com/zelucode/deskstride-browser-templates-registry/main/templates/practice-login-from-csv/README.md",
   "sha256": "dd87aabe4d34669da4160890be2795c2b9688f0a391e0974f7f347bde3e16f89",
-  "minExtensionVersion": "1.0.0",
+  "minExtensionVersion": "0.1.0",
   "verified": true,
   "revoked": false,
   "revokedReason": null

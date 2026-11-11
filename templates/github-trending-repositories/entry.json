@@ -24,7 +24,7 @@
   "downloadUrl": "https://raw.githubusercontent.com/zelucode/deskstride-browser-templates-registry/main/templates/github-trending-repositories/workflow.json",
   "readmeUrl": "https://raw.githubusercontent.com/zelucode/deskstride-browser-templates-registry/main/templates/github-trending-repositories/README.md",
   "sha256": "dfc25fa40596f505c0a8f7ac413a1857e4f3aa48eb83a8b08456ecbff9c5afcb",
-  "minExtensionVersion": "1.0.0",
+  "minExtensionVersion": "0.1.0",
   "verified": true,
   "revoked": false,
   "revokedReason": null

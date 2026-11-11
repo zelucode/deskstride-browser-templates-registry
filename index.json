@@ -28,7 +28,7 @@
       "downloadUrl": "https://raw.githubusercontent.com/zelucode/deskstride-browser-templates-registry/main/templates/books-to-scrape-catalogue/workflow.json",
       "readmeUrl": "https://raw.githubusercontent.com/zelucode/deskstride-browser-templates-registry/main/templates/books-to-scrape-catalogue/README.md",
       "sha256": "fcebc8f5e2d27de08f0932399958bfbc665d6a84c85e07593e276665f4963f3a",
-      "minExtensionVersion": "1.0.0",
+      "minExtensionVersion": "0.1.0",
       "verified": true,
       "revoked": false,
       "revokedReason": null
@@ -59,7 +59,7 @@
       "downloadUrl": "https://raw.githubusercontent.com/zelucode/deskstride-browser-templates-registry/main/templates/github-trending-repositories/workflow.json",
       "readmeUrl": "https://raw.githubusercontent.com/zelucode/deskstride-browser-templates-registry/main/templates/github-trending-repositories/README.md",
       "sha256": "dfc25fa40596f505c0a8f7ac413a1857e4f3aa48eb83a8b08456ecbff9c5afcb",
-      "minExtensionVersion": "1.0.0",
+      "minExtensionVersion": "0.1.0",
       "verified": true,
       "revoked": false,
       "revokedReason": null
@@ -94,7 +94,7 @@
       "downloadUrl": "https://raw.githubusercontent.com/zelucode/deskstride-browser-templates-registry/main/templates/practice-login-from-csv/workflow.json",
       "readmeUrl": "https://raw.githubusercontent.com/zelucode/deskstride-browser-templates-registry/main/templates/practice-login-from-csv/README.md",
       "sha256": "dd87aabe4d34669da4160890be2795c2b9688f0a391e0974f7f347bde3e16f89",
-      "minExtensionVersion": "1.0.0",
+      "minExtensionVersion": "0.1.0",
       "verified": true,
       "revoked": false,
       "revokedReason": null
@@ -128,7 +128,7 @@
       "downloadUrl": "https://raw.githubusercontent.com/zelucode/deskstride-browser-templates-registry/main/templates/wikipedia-search-results/workflow.json",
       "readmeUrl": "https://raw.githubusercontent.com/zelucode/deskstride-browser-templates-registry/main/templates/wikipedia-search-results/README.md",
       "sha256": "0cb96f1358d0db13f39cf301458cbb102ac82c85e6195af34e6de04d39f19da1",
-      "minExtensionVersion": "1.0.0",
+      "minExtensionVersion": "0.1.0",
       "verified": true,
       "revoked": false,
       "revokedReason": null

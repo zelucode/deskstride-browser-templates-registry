@@ -24,7 +24,7 @@
   "downloadUrl": "https://raw.githubusercontent.com/zelucode/deskstride-browser-templates-registry/main/templates/books-to-scrape-catalogue/workflow.json",
   "readmeUrl": "https://raw.githubusercontent.com/zelucode/deskstride-browser-templates-registry/main/templates/books-to-scrape-catalogue/README.md",
   "sha256": "fcebc8f5e2d27de08f0932399958bfbc665d6a84c85e07593e276665f4963f3a",
-  "minExtensionVersion": "1.0.0",
+  "minExtensionVersion": "0.1.0",
   "verified": true,
   "revoked": false,
   "revokedReason": null

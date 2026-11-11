@@ -27,7 +27,7 @@
   "downloadUrl": "https://raw.githubusercontent.com/zelucode/deskstride-browser-templates-registry/main/templates/wikipedia-search-results/workflow.json",
   "readmeUrl": "https://raw.githubusercontent.com/zelucode/deskstride-browser-templates-registry/main/templates/wikipedia-search-results/README.md",
   "sha256": "0cb96f1358d0db13f39cf301458cbb102ac82c85e6195af34e6de04d39f19da1",
-  "minExtensionVersion": "1.0.0",
+  "minExtensionVersion": "0.1.0",
   "verified": true,
   "revoked": false,
   "revokedReason": null
