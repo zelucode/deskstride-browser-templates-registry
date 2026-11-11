@@ -1,0 +1,35 @@
+{
+  "id": "practice-login-from-csv",
+  "name": "Practice site: log in with each account in a CSV",
+  "author": "DeskStride",
+  "description": "For each row of a CSV (Username, Password): opens the login page, types the credentials, submits, waits for the result and logs out. Shows how a CSV drives a form on a practice site.",
+  "category": "Forms",
+  "tags": [
+    "log in",
+    "fill a form",
+    "csv rows"
+  ],
+  "site": "the-internet.herokuapp.com",
+  "needs": [
+    "Replace the two sample rows in the Data tab with your own accounts to reuse the pattern on another site."
+  ],
+  "lastChecked": "2026-11-10",
+  "tier": "free",
+  "stepTypes": [
+    "click",
+    "navigate",
+    "repeat",
+    "type",
+    "wait"
+  ],
+  "hosts": [
+    "the-internet.herokuapp.com"
+  ],
+  "downloadUrl": "https://raw.githubusercontent.com/zelucode/deskstride-browser-templates-registry/main/templates/practice-login-from-csv/workflow.json",
+  "readmeUrl": "https://raw.githubusercontent.com/zelucode/deskstride-browser-templates-registry/main/templates/practice-login-from-csv/README.md",
+  "sha256": "dd87aabe4d34669da4160890be2795c2b9688f0a391e0974f7f347bde3e16f89",
+  "minExtensionVersion": "1.0.0",
+  "verified": true,
+  "revoked": false,
+  "revokedReason": null
+}

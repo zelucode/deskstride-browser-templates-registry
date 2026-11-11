@@ -1,0 +1,34 @@
+{
+  "format": "deskstride-workflow",
+  "version": 1,
+  "name": "Practice site: log in with each account in a CSV",
+  "startUrl": "https://the-internet.herokuapp.com/login",
+  "speed": "normal",
+  "steps": [
+    {
+      "id": "s1",
+      "type": "repeat",
+      "repeatMode": "rows",
+      "source": "data",
+      "maxIterations": 50,
+      "label": "For each account",
+      "steps": [
+        { "id": "s2", "type": "navigate", "value": "https://the-internet.herokuapp.com/login", "label": "Open the login page" },
+        { "id": "s3", "type": "type", "selector": "#username", "value": "{{Username}}", "clearFirst": true, "label": "Type the username" },
+        { "id": "s4", "type": "type", "selector": "#password", "value": "{{Password}}", "clearFirst": true, "label": "Type the password" },
+        { "id": "s5", "type": "click", "selector": "button[type=\"submit\"]", "label": "Click Login" },
+        { "id": "s6", "type": "wait", "waitMode": "appears", "selector": "#flash", "seconds": 10, "label": "Wait for the result message" },
+        { "id": "s7", "type": "navigate", "value": "https://the-internet.herokuapp.com/logout", "label": "Log out before the next account" }
+      ]
+    }
+  ],
+  "data": {
+    "fileName": "accounts.csv",
+    "columns": ["Username", "Password"],
+    "rows": [
+      { "Username": "tomsmith", "Password": "SuperSecretPassword!" },
+      { "Username": "tomsmith", "Password": "wrong-password" }
+    ]
+  },
+  "scrapingRules": []
+}

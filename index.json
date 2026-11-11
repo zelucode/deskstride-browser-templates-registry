@@ -1,0 +1,137 @@
+{
+  "format": "deskstride-browser-template-registry",
+  "version": 1,
+  "templates": {
+    "books-to-scrape-catalogue": {
+      "id": "books-to-scrape-catalogue",
+      "name": "Books to Scrape: catalogue with prices",
+      "author": "DeskStride",
+      "description": "Collects title, price, stock, rating and link for every book on the first 3 pages and saves a CSV.",
+      "category": "Scraping",
+      "tags": [
+        "scrape",
+        "paginate",
+        "export"
+      ],
+      "site": "books.toscrape.com",
+      "needs": [],
+      "lastChecked": "2026-11-10",
+      "tier": "free",
+      "stepTypes": [
+        "export",
+        "scrape",
+        "wait"
+      ],
+      "hosts": [
+        "books.toscrape.com"
+      ],
+      "downloadUrl": "https://raw.githubusercontent.com/zelucode/deskstride-browser-templates-registry/main/templates/books-to-scrape-catalogue/workflow.json",
+      "readmeUrl": "https://raw.githubusercontent.com/zelucode/deskstride-browser-templates-registry/main/templates/books-to-scrape-catalogue/README.md",
+      "sha256": "fcebc8f5e2d27de08f0932399958bfbc665d6a84c85e07593e276665f4963f3a",
+      "minExtensionVersion": "1.0.0",
+      "verified": true,
+      "revoked": false,
+      "revokedReason": null
+    },
+    "github-trending-repositories": {
+      "id": "github-trending-repositories",
+      "name": "GitHub: trending repositories",
+      "author": "DeskStride",
+      "description": "Saves today's trending repositories with description, language, stars, forks and stars today. Suited to a daily schedule.",
+      "category": "Scraping",
+      "tags": [
+        "scrape",
+        "export",
+        "schedule"
+      ],
+      "site": "github.com",
+      "needs": [],
+      "lastChecked": "2026-11-10",
+      "tier": "free",
+      "stepTypes": [
+        "export",
+        "scrape",
+        "wait"
+      ],
+      "hosts": [
+        "github.com"
+      ],
+      "downloadUrl": "https://raw.githubusercontent.com/zelucode/deskstride-browser-templates-registry/main/templates/github-trending-repositories/workflow.json",
+      "readmeUrl": "https://raw.githubusercontent.com/zelucode/deskstride-browser-templates-registry/main/templates/github-trending-repositories/README.md",
+      "sha256": "dfc25fa40596f505c0a8f7ac413a1857e4f3aa48eb83a8b08456ecbff9c5afcb",
+      "minExtensionVersion": "1.0.0",
+      "verified": true,
+      "revoked": false,
+      "revokedReason": null
+    },
+    "practice-login-from-csv": {
+      "id": "practice-login-from-csv",
+      "name": "Practice site: log in with each account in a CSV",
+      "author": "DeskStride",
+      "description": "For each row of a CSV (Username, Password): opens the login page, types the credentials, submits, waits for the result and logs out. Shows how a CSV drives a form on a practice site.",
+      "category": "Forms",
+      "tags": [
+        "log in",
+        "fill a form",
+        "csv rows"
+      ],
+      "site": "the-internet.herokuapp.com",
+      "needs": [
+        "Replace the two sample rows in the Data tab with your own accounts to reuse the pattern on another site."
+      ],
+      "lastChecked": "2026-11-10",
+      "tier": "free",
+      "stepTypes": [
+        "click",
+        "navigate",
+        "repeat",
+        "type",
+        "wait"
+      ],
+      "hosts": [
+        "the-internet.herokuapp.com"
+      ],
+      "downloadUrl": "https://raw.githubusercontent.com/zelucode/deskstride-browser-templates-registry/main/templates/practice-login-from-csv/workflow.json",
+      "readmeUrl": "https://raw.githubusercontent.com/zelucode/deskstride-browser-templates-registry/main/templates/practice-login-from-csv/README.md",
+      "sha256": "dd87aabe4d34669da4160890be2795c2b9688f0a391e0974f7f347bde3e16f89",
+      "minExtensionVersion": "1.0.0",
+      "verified": true,
+      "revoked": false,
+      "revokedReason": null
+    },
+    "wikipedia-search-results": {
+      "id": "wikipedia-search-results",
+      "name": "Wikipedia: search results to CSV",
+      "author": "DeskStride",
+      "description": "Runs a Wikipedia search and saves the title, snippet, size/date and link of the results on the first 3 pages.",
+      "category": "Scraping",
+      "tags": [
+        "search",
+        "scrape",
+        "paginate",
+        "export"
+      ],
+      "site": "en.wikipedia.org",
+      "needs": [
+        "Change the search words in the Start at address (search=...)."
+      ],
+      "lastChecked": "2026-11-10",
+      "tier": "free",
+      "stepTypes": [
+        "export",
+        "scrape",
+        "wait"
+      ],
+      "hosts": [
+        "en.wikipedia.org"
+      ],
+      "downloadUrl": "https://raw.githubusercontent.com/zelucode/deskstride-browser-templates-registry/main/templates/wikipedia-search-results/workflow.json",
+      "readmeUrl": "https://raw.githubusercontent.com/zelucode/deskstride-browser-templates-registry/main/templates/wikipedia-search-results/README.md",
+      "sha256": "0cb96f1358d0db13f39cf301458cbb102ac82c85e6195af34e6de04d39f19da1",
+      "minExtensionVersion": "1.0.0",
+      "verified": true,
+      "revoked": false,
+      "revokedReason": null
+    }
+  }
+}

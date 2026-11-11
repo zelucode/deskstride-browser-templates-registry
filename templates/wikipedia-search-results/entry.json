@@ -1,0 +1,34 @@
+{
+  "id": "wikipedia-search-results",
+  "name": "Wikipedia: search results to CSV",
+  "author": "DeskStride",
+  "description": "Runs a Wikipedia search and saves the title, snippet, size/date and link of the results on the first 3 pages.",
+  "category": "Scraping",
+  "tags": [
+    "search",
+    "scrape",
+    "paginate",
+    "export"
+  ],
+  "site": "en.wikipedia.org",
+  "needs": [
+    "Change the search words in the Start at address (search=...)."
+  ],
+  "lastChecked": "2026-11-10",
+  "tier": "free",
+  "stepTypes": [
+    "export",
+    "scrape",
+    "wait"
+  ],
+  "hosts": [
+    "en.wikipedia.org"
+  ],
+  "downloadUrl": "https://raw.githubusercontent.com/zelucode/deskstride-browser-templates-registry/main/templates/wikipedia-search-results/workflow.json",
+  "readmeUrl": "https://raw.githubusercontent.com/zelucode/deskstride-browser-templates-registry/main/templates/wikipedia-search-results/README.md",
+  "sha256": "0cb96f1358d0db13f39cf301458cbb102ac82c85e6195af34e6de04d39f19da1",
+  "minExtensionVersion": "1.0.0",
+  "verified": true,
+  "revoked": false,
+  "revokedReason": null
+}

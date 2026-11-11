@@ -1,0 +1,31 @@
+{
+  "id": "github-trending-repositories",
+  "name": "GitHub: trending repositories",
+  "author": "DeskStride",
+  "description": "Saves today's trending repositories with description, language, stars, forks and stars today. Suited to a daily schedule.",
+  "category": "Scraping",
+  "tags": [
+    "scrape",
+    "export",
+    "schedule"
+  ],
+  "site": "github.com",
+  "needs": [],
+  "lastChecked": "2026-11-10",
+  "tier": "free",
+  "stepTypes": [
+    "export",
+    "scrape",
+    "wait"
+  ],
+  "hosts": [
+    "github.com"
+  ],
+  "downloadUrl": "https://raw.githubusercontent.com/zelucode/deskstride-browser-templates-registry/main/templates/github-trending-repositories/workflow.json",
+  "readmeUrl": "https://raw.githubusercontent.com/zelucode/deskstride-browser-templates-registry/main/templates/github-trending-repositories/README.md",
+  "sha256": "dfc25fa40596f505c0a8f7ac413a1857e4f3aa48eb83a8b08456ecbff9c5afcb",
+  "minExtensionVersion": "1.0.0",
+  "verified": true,
+  "revoked": false,
+  "revokedReason": null
+}

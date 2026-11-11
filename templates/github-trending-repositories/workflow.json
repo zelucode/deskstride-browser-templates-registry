@@ -1,0 +1,27 @@
+{
+  "format": "deskstride-workflow",
+  "version": 1,
+  "name": "GitHub: trending repositories",
+  "startUrl": "https://github.com/trending",
+  "speed": "normal",
+  "steps": [
+    { "id": "s1", "type": "wait", "waitMode": "appears", "selector": "article.Box-row", "seconds": 15, "label": "Wait for the trending list" },
+    { "id": "s2", "type": "scrape", "ruleName": "GitHub: trending repositories", "label": "Collect today's trending repositories" },
+    { "id": "s3", "type": "export", "format": "csv", "value": "github-trending-{{date}}", "label": "Save the list as a CSV" }
+  ],
+  "schedule": { "enabled": false, "kind": "daily", "time": "09:00" },
+  "scrapingRules": [
+    {
+      "name": "GitHub: trending repositories",
+      "containerSelector": "div:has(> article.Box-row)",
+      "fields": [
+        { "name": "Repository", "selector": "h2 a", "extractionType": "attribute", "attributeName": "href" },
+        { "name": "Description", "selector": "p", "extractionType": "text" },
+        { "name": "Language", "selector": "[itemprop=\"programmingLanguage\"]", "extractionType": "text" },
+        { "name": "Stars", "selector": "a[href$=\"/stargazers\"]", "extractionType": "text" },
+        { "name": "Forks", "selector": "a[href$=\"/forks\"]", "extractionType": "text" },
+        { "name": "Stars today", "selector": "span.float-sm-right", "extractionType": "text" }
+      ]
+    }
+  ]
+}

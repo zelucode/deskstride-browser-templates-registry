@@ -1,0 +1,26 @@
+{
+  "format": "deskstride-workflow",
+  "version": 1,
+  "name": "Books to Scrape: catalogue with prices",
+  "startUrl": "https://books.toscrape.com/",
+  "speed": "normal",
+  "steps": [
+    { "id": "s1", "type": "wait", "waitMode": "appears", "selector": "ol.row", "seconds": 15, "label": "Wait for the book list" },
+    { "id": "s2", "type": "scrape", "ruleName": "Books to Scrape: catalogue", "label": "Collect the books on up to 3 pages" },
+    { "id": "s3", "type": "export", "format": "csv", "value": "books-{{date}}", "label": "Save the books as a CSV" }
+  ],
+  "scrapingRules": [
+    {
+      "name": "Books to Scrape: catalogue",
+      "containerSelector": "ol.row",
+      "fields": [
+        { "name": "Title", "selector": "h3 a", "extractionType": "attribute", "attributeName": "title" },
+        { "name": "Price", "selector": ".price_color", "extractionType": "text" },
+        { "name": "Availability", "selector": ".availability", "extractionType": "text" },
+        { "name": "Rating", "selector": "p.star-rating", "extractionType": "attribute", "attributeName": "class" },
+        { "name": "Link", "selector": "h3 a", "extractionType": "attribute", "attributeName": "href" }
+      ],
+      "pagination": { "enabled": true, "type": "next-button", "selector": "li.next a", "maxPages": 3 }
+    }
+  ]
+}

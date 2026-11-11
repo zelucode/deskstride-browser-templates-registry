@@ -1,0 +1,25 @@
+{
+  "format": "deskstride-workflow",
+  "version": 1,
+  "name": "Wikipedia: search results to CSV",
+  "startUrl": "https://en.wikipedia.org/w/index.php?search=web+scraping&fulltext=1&ns0=1",
+  "speed": "normal",
+  "steps": [
+    { "id": "s1", "type": "wait", "waitMode": "appears", "selector": "ul.mw-search-results", "seconds": 15, "label": "Wait for the results" },
+    { "id": "s2", "type": "scrape", "ruleName": "Wikipedia: search results", "label": "Collect the results on up to 3 pages" },
+    { "id": "s3", "type": "export", "format": "csv", "value": "wikipedia-search-{{date}}", "label": "Save the results as a CSV" }
+  ],
+  "scrapingRules": [
+    {
+      "name": "Wikipedia: search results",
+      "containerSelector": "ul.mw-search-results",
+      "fields": [
+        { "name": "Title", "selector": ".mw-search-result-heading a", "extractionType": "attribute", "attributeName": "title" },
+        { "name": "Snippet", "selector": ".searchresult", "extractionType": "text" },
+        { "name": "Details", "selector": ".mw-search-result-data", "extractionType": "text" },
+        { "name": "Link", "selector": ".mw-search-result-heading a", "extractionType": "attribute", "attributeName": "href" }
+      ],
+      "pagination": { "enabled": true, "type": "next-button", "selector": "a[aria-label=\"Next page\"]", "maxPages": 3 }
+    }
+  ]
+}
