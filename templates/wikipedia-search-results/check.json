@@ -1,0 +1,22 @@
+{
+  "pages": [
+    {
+      "url": "https://en.wikipedia.org/w/index.php?search=web+scraping&fulltext=1&ns0=1",
+      "exists": [
+        "ul.mw-search-results",
+        "a[aria-label=\"Next page\"]"
+      ]
+    }
+  ],
+  "scrape": {
+    "rule": "Wikipedia: search results",
+    "url": "https://en.wikipedia.org/w/index.php?search=web+scraping&fulltext=1&ns0=1",
+    "minRows": 10,
+    "mustBeFilled": [
+      "Title",
+      "Snippet",
+      "Details",
+      "Link"
+    ]
+  }
+}

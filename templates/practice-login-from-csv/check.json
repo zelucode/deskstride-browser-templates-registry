@@ -1,0 +1,12 @@
+{
+  "pages": [
+    {
+      "url": "https://the-internet.herokuapp.com/login",
+      "exists": [
+        "#username",
+        "#password",
+        "button[type=\"submit\"]"
+      ]
+    }
+  ]
+}

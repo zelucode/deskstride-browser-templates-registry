@@ -13,6 +13,7 @@ templates/<id>/
   entry.json      metadata, scanned to build index.json
   workflow.json   the exact bytes the entry's sha256 pins (exported from the extension)
   README.md       optional guide shown in the template's Details view
+  check.json      what the live selector check verifies (test-only; the extension repo's lib/templatesLive.test.ts reads it)
 index.json        generated, do not hand-edit
 ```
 
@@ -41,3 +42,7 @@ Never edit a `workflow.json` without running `sync`: the extension refuses a fil
 - Prefer stable selectors (ids, `itemprop`, `aria-label`) over generated class names.
 - Only sites whose terms allow this kind of use. Practice sites made for scraping are the safest start.
 - Revoke a template with `"revoked": true` (and `revokedReason`), rebuild the index and push. Already-imported copies are never removed.
+
+## License
+
+See [LICENSE](LICENSE). The templates may be used with DeskStride; they may not be mirrored or served by other products.

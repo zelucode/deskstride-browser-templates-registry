@@ -1,0 +1,21 @@
+{
+  "pages": [
+    {
+      "url": "https://github.com/trending",
+      "exists": [
+        "article.Box-row"
+      ]
+    }
+  ],
+  "scrape": {
+    "rule": "GitHub: trending repositories",
+    "url": "https://github.com/trending",
+    "minRows": 5,
+    "mustBeFilled": [
+      "Repository",
+      "Stars",
+      "Forks",
+      "Stars today"
+    ]
+  }
+}

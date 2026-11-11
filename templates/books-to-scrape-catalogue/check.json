@@ -1,0 +1,23 @@
+{
+  "pages": [
+    {
+      "url": "https://books.toscrape.com/",
+      "exists": [
+        "ol.row",
+        "li.next a"
+      ]
+    }
+  ],
+  "scrape": {
+    "rule": "Books to Scrape: catalogue",
+    "url": "https://books.toscrape.com/",
+    "minRows": 20,
+    "mustBeFilled": [
+      "Title",
+      "Price",
+      "Availability",
+      "Rating",
+      "Link"
+    ]
+  }
+}
